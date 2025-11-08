@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discrete Mathematics Syllabus</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap');
+
+        :root {
+            --bg-color: #1a1a2e;
+            --card-bg: #ffffff;
+            --text-on-dark: #e5e7eb;
+            --text-on-light: #2c3e50;
+            --accent-color: #3498db;
+            --heading-bright-color: #22d3ee;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-on-dark);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .course-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .course-header h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 3.2em;
+            font-weight: 700;
+            color: var(--heading-bright-color);
+            text-shadow: 0 0 8px rgba(34, 211, 238, 0.3);
+            margin-bottom: 10px;
+        }
+
+        .course-header p {
+            font-size: 1.1em;
+            color: var(--text-on-dark);
+            margin: 5px 0;
+        }
+        
+        .course-header strong {
+            color: #ffffff;
+        }
+
+        .modules-section h3 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: var(--text-on-dark);
+        }
+        
+        .module-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 25px var(--shadow-color);
+            border: 1px solid #e8e8e8;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .module-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .module-number {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--accent-color);
+            background-color: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: 25px;
+        }
+
+        .module-content h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.4em;
+            color: var(--text-on-light);
+        }
+
+        .module-content p {
+            margin: 0;
+            color: var(--text-on-light);
+            font-weight: 400;
+        }
+        
+        .textbooks-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 0 4px 25px var(--shadow-color);
+            border: 1px solid #e8e8e8;
+        }
+        
+        .textbooks-card h3 {
+             text-align: left;
+             margin-top: 0;
+             margin-bottom: 20px;
+             color: var(--text-on-light);
+        }
+        
+        .textbooks-card ol {
+            padding-left: 20px;
+        }
+        
+        .textbooks-card li {
+            color: var(--text-on-light);
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="course-header">
+            <h2>Discrete Mathematics</h2>
+            <p><strong>Program:</strong> B.Tech  ·  <strong>Semester:</strong> 1st  ·  <strong>Year:</strong> First</p>
+            <p><strong>Type:</strong> Compulsory  ·  <strong>Prerequisites:</strong> N/A</p>
+        </div>
+
+        <div class="modules-section">
+            <h3>Course Content</h3>
+
+            <div class="module-card">
+                <div class="module-number">1</div>
+                <div class="module-content">
+                    <h4>Sets</h4>
+                    <p>Methods for describing a set, e.g., listing elements, set builder notation, Venn diagrams, Union, intersection, set difference, complement, Cartesian product, Power sets, Cardinality of finite sets, Inclusion-exclusion principle, Proof Technique: <strong>Mathematical Induction</strong>.</p>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">2</div>
+                <div class="module-content">
+                    <h4>Relations & Functions</h4>
+                    <p>Reflexivity, Symmetry, Antisymmetric, Transitivity, Equivalence relations, Equivalence class. Functions: Domain, Target, Range/Image of a function, Surjections, Injections, Bijections, Inverses, Composition, Partial Ordering sets, Linear Ordering, Hasse Diagrams, Maximum and Minimum elements, Lattices, The pigeonhole principle, Algebraic Structure: Group, Ring, Field.</p>
+                </div>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-number">3</div>
+                <div class="module-content">
+                    <h4>Basic of Logic</h4>
+                    <p>Propositional logic, Logical connectives, Truth tables, Tautology and Contradiction, Disjunctive normal form, Conjunctive normal form, Validity of a well-formed formula, Propositional inference rules (e.g., modus ponens, modus tollens), Universal and existential quantifiers and their negations.</p>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">4</div>
+                <div class="module-content">
+                    <h4>Trees and Graphs</h4>
+                    <p>Properties of tree, Traversal strategies. Introduction to graphs and their basic properties: Degree, Path, Cycle, Subgraph, Isomorphism, Eulerian and Hamiltonian walk, Planar graph. Undirected graphs, Directed graphs, Weighted graphs, Spanning tree, Spanning tree algorithms, Forests, Graph isomorphism. Graph coloring, Covering, and Partitioning. Bipartite graph, Chromatic number, Chromatic Partitioning, Chromatic Polynomial, Matching, Covering, Four Colour problem.</p>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number">5</div>
+                <div class="module-content">
+                    <h4>Recurrence Relations</h4>
+                    <p>Definition of recurrence relations, Formulating recurrence relations, Linear homogeneous recurrence relations with constant coefficients, Solving linear homogeneous recurrence relations with constant coefficients of degree two when characteristic equation has distinct roots and only one root, Particular solutions of nonlinear homogeneous recurrence relation, Solution of recurrence relation by the method of generation functions.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="textbooks-card">
+            <h3>Text Books</h3>
+            <ol>
+                <li>K. H. Rosen: Discrete Mathematics and Its Applications. McGraw-Hill, 8th Edition.</li>
+                <li>C. L. Liu: Elements of Discrete Mathematics (SIE), 3rd Edition. Tata McGraw Hill India, 2008.</li>
+                <li>Richard Johnsonbaugh: Discrete Mathematics, 8th Edition. DePaul University, Chicago, Pearson, 2017.</li>
+            </ol>
+        </div>
+
+    </div>
+
+</body>
+</html>
